@@ -7,14 +7,20 @@ from sklearn.pipeline import Pipeline
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
-
+import os 
 #data
 
-df = pd.read_csv('../data/data_big.csv', sep=';')
+
+import os
+os.chdir(os.path.dirname(__file__))
+# script_dir = os.path.dirname(__file__) #<-- absolute dir the script is in
+# rel_path = "data\data_big.csv"
+# abs_file_path = os.path.join(script_dir, rel_path)
+# df = pd.read_csv(abs_file_path, sep=';')
+df = pd.read_csv("data/data_big.csv", sep=';')
 X = df.drop(columns=['Target'])
 y = df['Target']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20, random_state=33)
-
 
 #model
 
@@ -33,6 +39,9 @@ pipe_final.fit(X_train,y_train)
 
 fecha = datetime.datetime.now().strftime('%y%m%d%H%M%S')
 nombre_modelo = f"model_{fecha}"
+
+
+
 
 with open(nombre_modelo, 'wb') as archivo_salida:
     pickle.dump(pipe_final, archivo_salida)
