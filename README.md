@@ -2,7 +2,7 @@
 
 This project aims to predict the academic success of students in the USA using a dataset with more than 4000 rows and 30 features. The target variable is to predict if the student will graduate, dropout or enroll. The project is based on a Jupyter Notebook and uses various Python libraries for data analysis, processing, and modeling like Pandas, Numpy, Seaborn, Matplotlib and Sklearn
 
-![Portada]!(images/portada.png)
+![Portada](images/Portada.png)
 
 
 ## Table of Contents
@@ -22,6 +22,8 @@ The educational institutions in the USA face a big challenge in predicting the a
 
 The dataset used in this project is a publicly available dataset on Kaggle with more than 4000 rows and 30 features. The dataset includes information about the student's background, their academic performance, and various demographic factors. The target variable is to predict if the student will graduate, dropout or enroll. The data can be found in the `data` directory.
 
+![Data](images/Datos.png)
+
 ## Data Analysis
 
 Before building a predictive model, it's important to analyze the data and understand its patterns and relationships. The data analysis section of the Jupyter Notebook includes exploratory data analysis, descriptive statistics, and data visualization to gain insights into the data.
@@ -33,6 +35,8 @@ After the data analysis, the next step is to preprocess the data for modeling. T
 ## Data Modeling
 
 With the preprocessed data, the next step is to build a predictive model. The data modeling section of the Jupyter Notebook includes building and training various machine learning models to predict if the student will graduate, dropout or enroll. The models are evaluated based on various performance metrics to select the best model for the task.
+
+![Models](images/Modelos%20y%20resultados.png)
 
 ## Predictions and Future Steps
 
