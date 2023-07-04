@@ -1,4 +1,4 @@
-# Predicting Students Academic Success in the USA
+# Predicting Students Academic Success
 
 This project aims to predict the academic success of students in the USA using a dataset with more than 4000 rows and 30 features. The target variable is to predict if the student will graduate, dropout or enroll. The project is based on a Jupyter Notebook and uses various Python libraries for data analysis, processing, and modeling like Pandas, Numpy, Seaborn, Matplotlib and Sklearn
 
